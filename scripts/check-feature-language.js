@@ -7,6 +7,7 @@ const stepPattern = /^\s*(Given|When|Then|And|But)\s+(.+)\s*$/;
 const polishCharacterPattern = /[ąćęłńóśźż]/i;
 const polishWords = new Set([
   'aby',
+  'administrator',
   'automatycznie',
   'brak',
   'części',
