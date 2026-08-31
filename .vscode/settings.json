@@ -1,0 +1,12 @@
+{
+  "cucumber.glue": [
+    "features/~step_definitions/**/*.js",
+    "features/~step_definitions/**/*.ts"
+  ],
+  "cucumber.features": [
+    "features/**/*.feature"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
