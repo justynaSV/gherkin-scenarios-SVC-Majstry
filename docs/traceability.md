@@ -6,6 +6,12 @@ feature files instead, then regenerate. `npm run validate` fails if this file is
 
 | Story ID | Acceptance criterion | Feature file | Scenario name | Tags |
 | --- | --- | --- | --- | --- |
+| SVCLOUD-5064 | AC1: manualna zmiana statusu generuje nowy wpis w Rejestrze Zmian | `features/potwierdzenie-wizyty/rejestr-zmian-potwierdzenia-napraw.feature` | `Ręczna zmiana statusu potwierdzenia wizyty tworzy nowy wpis w Rejestrze Zmian` | `@potwierdzenie-wizyty @smoke @regression` |
+| SVCLOUD-5064 | AC2: wpis w Rejestrze Zmian zawiera pełne dane operacji | `features/potwierdzenie-wizyty/rejestr-zmian-potwierdzenia-napraw.feature` | `Wpis w Rejestrze Zmian zawiera datę, godzinę oraz dane użytkownika wykonującego zmianę` | `@potwierdzenie-wizyty @regression` |
+| SVCLOUD-5064 | — | `features/potwierdzenie-wizyty/rejestr-zmian-potwierdzenia-napraw.feature` | `Przycisk aktualnego statusu potwierdzenia jest ukryty w oknie zmiany statusu` | `@potwierdzenie-wizyty @regression @ui` |
+| SVCLOUD-5064 | — | `features/potwierdzenie-wizyty/rejestr-zmian-potwierdzenia-napraw.feature` | `Status potwierdzenia jest prezentowany z odrębną ikoną i tooltipem na tablicy zarządzania naprawami` | `@potwierdzenie-wizyty @regression @ui` |
+| SVCLOUD-5064 | — | `features/potwierdzenie-wizyty/rejestr-zmian-potwierdzenia-napraw.feature` | `Przeplanowanie naprawy za pomocą kreatora zmienia status potwierdzenia na Niepotwierdzona` | `@potwierdzenie-wizyty @regression` |
+| SVCLOUD-5064 | AC1: kolejne zmiany statusu tworzą oddzielne, chronologiczne wpisy | `features/potwierdzenie-wizyty/rejestr-zmian-potwierdzenia-napraw.feature` | `Kolejne zmiany statusu potwierdzenia tworzą oddzielne wpisy w Rejestrze Zmian` | `@potwierdzenie-wizyty @regression` |
 | SVCLOUD-5465 | AC1: okno dodania rodzaju prac, pole Priorytet | `features/rodzaje-prac/konfiguracja-priorytetow-rodzajow-prac.feature` | `Dodanie nowego rodzaju prac z priorytetem niewymagającym wskazania rodzaju referencyjnego` | `@rodzaje-prac @smoke @regression @ui` |
 | SVCLOUD-5465 | AC1: domyślne wartości pól formularza dodawania | `features/rodzaje-prac/konfiguracja-priorytetow-rodzajow-prac.feature` | `Domyślny stan nowych pól w oknie dodawania rodzaju prac` | `@rodzaje-prac @regression @ui` |
 | SVCLOUD-5465 | AC1: walidacja wymagalności pola Priorytet | `features/rodzaje-prac/konfiguracja-priorytetow-rodzajow-prac.feature` | `Próba zapisu nowego rodzaju prac z pustym polem Priorytet` | `@rodzaje-prac @regression @ui` |
